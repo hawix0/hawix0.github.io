@@ -19,16 +19,16 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 		.then(ImageScript.decode)
         .catch(e=>{throw `Failed to load/download overlay image\n${e?.stack??e}`});
         
-	const pusab = await getBuff(`assets/fonts/gg-sans/gg-sans-Semibold.ttf`, 1)
+	const pusab = await getBuff(`assets/fonts/ggsans/ggsans-Semibold.ttf`, 1)
         .then((a) => new Uint8Array(a))
-        .catch(e=>{throw `Failed to load/download font "Pusab"\n${e?.stack??e}`});
+        .catch(e=>{throw `Failed to load/download font "ggsans-Semibold"\n${e?.stack??e}`});
 
 	const layout = new ImageScript.TextLayout({
 		maxHeight: 100,
 		horizontalAlign: "bottom",
 	});
 	let sign = await ImageScript.Image.renderText(
-		gg-sans-Semibold,
+		ggsans-Semibold,
 		98,
 		target.username,
 		0x00FFFFFF,
