@@ -19,7 +19,7 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 		.then(ImageScript.decode)
         .catch(e=>{throw `Failed to load/download overlay image\n${e?.stack??e}`});
         
-	const pusab = await getBuff(`assets/fonts/ggsans-Semibold.ttf`, 1)
+	const ggsans = await getBuff(`assets/fonts/ggsans-Semibold.ttf`, 1)
         .then((a) => new Uint8Array(a))
         .catch(e=>{throw `Failed to load/download font "ggsans-Semibold"\n${e?.stack??e}`});
 
@@ -28,7 +28,7 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 		horizontalAlign: "bottom",
 	});
 	let sign = await ImageScript.Image.renderText(
-		ggsans-Semibold,
+		ggsans,
 		98,
 		target.username,
 		0x00FFFFFF,
