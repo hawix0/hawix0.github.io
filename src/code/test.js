@@ -25,7 +25,7 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 
 	const layout = new ImageScript.TextLayout({
 		maxHeight: 100,
-		horizontalAlign: "bottom",
+		horizontalAlign: "top",
 	});
 	let sign = await ImageScript.Image.renderText(
 		ggsans-Semibold,
