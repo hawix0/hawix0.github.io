@@ -15,7 +15,7 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 	            .then(ImageScript.decode)
 	    );
 	    
-	const overlay = await getBuff(`assets/oulays/framediscordblue.png`, 1)
+	const overlay = await getBuff(`assets/oulays/gdicon.png`, 1)
 		.then(ImageScript.decode)
         .catch(e=>{throw `Failed to load/download overlay image\n${e?.stack??e}`});
         
