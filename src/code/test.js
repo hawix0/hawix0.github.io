@@ -34,7 +34,7 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 		0x000000ff,
 		layout
 	);
-	avatar.contain(overlay.width, overlay.height)
+	avatar.contain(overlay.120, overlay.120)
 	avatar.composite(overlay, 0, 0)
 	avatar.composite(sign, 20, 20)
 	return avatar.encode(9);
