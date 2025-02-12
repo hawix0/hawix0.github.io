@@ -25,15 +25,16 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 
 	const layout = new ImageScript.TextLayout({
 		maxHeight: 100,
-		horizontalAlign: "bottom",
+		horizontalAlign: "top",
 	});
   let sign = await ImageScript.Image.renderText(
     pusab,
     98,
-    target.username[0],
+    target.username,
     0xffffffff,
     layout
   );
+  overlay.composite(textOverlay, 52, 119, 0);
 	avatar.contain(overlay.width, overlay.height)
 	avatar.composite(overlay, 0, 0)
 	avatar.composite(sign, 20, 20)
