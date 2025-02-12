@@ -15,25 +15,25 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 	            .then(ImageScript.decode)
 	    );
 	    
-	const overlay = await getBuff(`assets/oulays/gdicon.png`, 1)
+	const overlay = await getBuff(`assets/oulays/framediscordblue.png`, 1)
 		.then(ImageScript.decode)
         .catch(e=>{throw `Failed to load/download overlay image\n${e?.stack??e}`});
         
-	const ggsans = await getBuff(`assets/fonts/Ggsans.ttf`, 1)
+	const pusab = await getBuff(`assets/fonts/Pusab.ttf`, 1)
         .then((a) => new Uint8Array(a))
-        .catch(e=>{throw `Failed to load/download font "Ggsans"\n${e?.stack??e}`});
+        .catch(e=>{throw `Failed to load/download font "Pusab"\n${e?.stack??e}`});
 
 	const layout = new ImageScript.TextLayout({
 		maxHeight: 100,
-		horizontalAlign: "top",
+		horizontalAlign: "bottom",
 	});
-	let sign = await ImageScript.Image.renderText(
-		ggsans,
-		98,
-		target.username[0],
-		0x000000ff,
-		layout
-	);
+  let sign = await ImageScript.Image.renderText(
+    pusab,
+    98,
+    target.username,
+    0xffffffff,
+    layout
+  );
 	avatar.contain(overlay.width, overlay.height)
 	avatar.composite(overlay, 0, 0)
 	avatar.composite(sign, 20, 20)
