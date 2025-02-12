@@ -19,7 +19,7 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 		.then(ImageScript.decode)
         .catch(e=>{throw `Failed to load/download overlay image\n${e?.stack??e}`});
         
-	const ggsans = await getBuff(`assets/fonts/GgSans.ttf`, 1)
+	const ggsans = await getBuff(`assets/fonts/Ggsans.ttf`, 1)
         .then((a) => new Uint8Array(a))
         .catch(e=>{throw `Failed to load/download font "GgSans"\n${e?.stack??e}`});
 
@@ -30,8 +30,8 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 	let sign = await ImageScript.Image.renderText(
 		ggsans,
 		98,
-		target.username(0),
-		0x00FFFFFF,
+		target.username[0]),
+		0x000000ff,
 		layout
 	);
 	avatar.contain(overlay.width, overlay.height)
