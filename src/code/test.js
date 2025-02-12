@@ -30,7 +30,7 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
   let sign = await ImageScript.Image.renderText(
     pusab,
     98,
-    target.username,
+    target.username[0],
     0xffffffff,
     layout
   );
