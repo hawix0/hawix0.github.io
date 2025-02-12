@@ -28,7 +28,7 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 		horizontalAlign: "bottom",
 	});
 	let sign = await ImageScript.Image.renderText(
-		ggsans,
+		ggsans-Semibold,
 		98,
 		target.username,
 		0x00FFFFFF,
