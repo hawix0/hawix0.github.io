@@ -19,9 +19,9 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
 		.then(ImageScript.decode)
         .catch(e=>{throw `Failed to load/download overlay image\n${e?.stack??e}`});
         
-	const ggsans = await getBuff(`assets/fonts/ggsans-Semibold.ttf`, 1)
+	const ggsans = await getBuff(`assets/fonts/GgSans.ttf`, 1)
         .then((a) => new Uint8Array(a))
-        .catch(e=>{throw `Failed to load/download font "ggsans-Semibold"\n${e?.stack??e}`});
+        .catch(e=>{throw `Failed to load/download font "GgSans"\n${e?.stack??e}`});
 
 	const layout = new ImageScript.TextLayout({
 		maxHeight: 100,
