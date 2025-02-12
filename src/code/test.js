@@ -21,7 +21,7 @@ const avatar = "{avatar:{js:(ctx.target=(message?.referenced_message?.author \|\
         
 	const ggsans = await getBuff(`assets/fonts/Ggsans.ttf`, 1)
         .then((a) => new Uint8Array(a))
-        .catch(e=>{throw `Failed to load/download font "GgSans"\n${e?.stack??e}`});
+        .catch(e=>{throw `Failed to load/download font "Ggsans"\n${e?.stack??e}`});
 
 	const layout = new ImageScript.TextLayout({
 		maxHeight: 100,
