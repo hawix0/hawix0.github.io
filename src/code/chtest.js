@@ -1,3 +1,5 @@
+{js:
+const getBuff = (path, yop) => fetch(yop ? "http://hawix0.github.io/src/" + path : path).then(res=>res.arrayBuffer());
 {
     ignore: (async () => {
         args = args.join(" ").split(" ");
@@ -55,5 +57,5 @@
         }
 
     })()
-}
+}}
 
