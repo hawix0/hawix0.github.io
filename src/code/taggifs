@@ -1,4 +1,2 @@
 {choose:
-{arg:0}Opciones Disponibles: janeth, hawix|
-{args:1[janeth]}https://cdn.discordapp.com/attachments/1342896756458913915/1541264658227269642/lv_0_20260816000228.gif?ex=6a8cf611&is=6a8ba491&hm=3cffd005756561e907c86337e3d37c6c823b3b677c332f7f9c51c3bfebf039a8|
-{args:1[hawix]}https://cdn.discordapp.com/attachments/1342896756458913915/1343439881489092689/attachment-1.gif?ex=6a8c71a3&is=6a8b2023&hm=e5a6e49a5598e40e829952d760bc57a8a23b8a04e2b86d73b98cf210e1c266b6}
+{arg:0}Opciones Disponibles: janeth, hawix|{args:1[janeth]}https://cdn.discordapp.com/attachments/1342896756458913915/1541264658227269642/lv_0_20260816000228.gif?ex=6a8cf611&is=6a8ba491&hm=3cffd005756561e907c86337e3d37c6c823b3b677c332f7f9c51c3bfebf039a8|{args:1[hawix]}https://cdn.discordapp.com/attachments/1342896756458913915/1343439881489092689/attachment-1.gif?ex=6a8c71a3&is=6a8b2023&hm=e5a6e49a5598e40e829952d760bc57a8a23b8a04e2b86d73b98cf210e1c266b6}
