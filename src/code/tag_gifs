@@ -1,7 +1,7 @@
 .t edit gif {lua:
 local gif = {
   janeth = "https://cdn.discordapp.com/attachments/1342896756458913915/1541264658227269642/lv_0_20260816000228.gif",
-  hawix  = "https://cdn.discordapp.com/attachments/1342896756458913915/1343439881489092689/attachment-1.gif?ex=6a8c71a3&is=6a8b2023&hm=e5a6e49a5598e40e829952d760bc57a8a23b8a04e2b86d73b98cf210e1c266b6",
+  hawix  = "https://cdn.discordapp.com/attachments/1342896756458913915/1343439881489092689/attachment-1.gif",
 }
 
 local arg = string.lower(({...})[1] or "")
